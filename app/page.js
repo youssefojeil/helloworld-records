@@ -1,7 +1,10 @@
+import Navbar from '@/components/navbar';
+import SplineHero from '@/components/spline';
+
 const Home = () => {
   return (
     <main>
-      <div className="flex-1"></div>
+      <SplineHero />
     </main>
   );
 };
