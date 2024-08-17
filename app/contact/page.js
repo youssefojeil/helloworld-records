@@ -1,9 +1,9 @@
-import React from 'react';
-import { ContactForm } from '@/components/contact-form';
+import React from "react";
+import { ContactForm } from "@/components/contact-form";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="xl:mb-48">
       <ContactForm />
     </div>
   );

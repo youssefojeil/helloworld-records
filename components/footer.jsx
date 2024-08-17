@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className=" fixed bottom-0 w-full">
+    <div className=" relatiive bottom-0 w-full">
       <FooterItems />
     </div>
   );

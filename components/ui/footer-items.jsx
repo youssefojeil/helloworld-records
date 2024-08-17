@@ -23,7 +23,7 @@ const navigation = {
 const FooterItems = () => {
   return (
     <footer>
-      <div className="text-center flex flex-col items-center justify-center mb-6">
+      <div className="text-center flex flex-col items-center justify-center mb-1">
         <Link href={"/"}>
           <h2 className="font-bold text-3xl  mb-4 md:mb-0 text-center md:text-start text-neutral-200 ">
             HelloWorld

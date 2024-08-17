@@ -1,18 +1,18 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 
-import { AnimatePresence, motion } from 'framer-motion';
-import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect';
+import { AnimatePresence, motion } from "framer-motion";
+import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 
 export function CanvasRevealEffectDemo() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row flex-wrap items-center justify-center bg-white dark:bg-black w-3/4 gap-y-16 mx-auto px-12">
+      <div className="mb-20 py-20 flex flex-col lg:flex-row flex-wrap items-center justify-center bg-white dark:bg-black w-3/4 gap-y-16 mx-auto px-12">
         <Card
           title="HYPER VISOR"
           icon={<img src="/images/hyper.jpg" />}
           link={
-            'https://open.spotify.com/artist/2qPzTaIaNHnC01RWTzVw5I?si=8dac7717130c4319'
+            "https://open.spotify.com/artist/2qPzTaIaNHnC01RWTzVw5I?si=8dac7717130c4319"
           }
         >
           <CanvasRevealEffect
@@ -28,7 +28,7 @@ export function CanvasRevealEffectDemo() {
           title="ENVI"
           icon={<img src="/images/clandestina.jpg" />}
           link={
-            'https://open.spotify.com/artist/0dll1EAkzgRVzLAGppbpXN?si=2af344b085dd4b48'
+            "https://open.spotify.com/artist/0dll1EAkzgRVzLAGppbpXN?si=2af344b085dd4b48"
           }
         >
           <CanvasRevealEffect
@@ -48,7 +48,7 @@ export function CanvasRevealEffectDemo() {
           title="rks."
           icon={<img src="/images/aicha.jpg" />}
           link={
-            'https://open.spotify.com/artist/330gTP3Pzh5lGKybXO0YuJ?si=a0499043910346cd'
+            "https://open.spotify.com/artist/330gTP3Pzh5lGKybXO0YuJ?si=a0499043910346cd"
           }
         >
           <CanvasRevealEffect
@@ -65,7 +65,7 @@ export function CanvasRevealEffectDemo() {
           title="ADRL"
           icon={<img src="/images/adrl.jpg" />}
           link={
-            'https://open.spotify.com/artist/6cTAL3LcbKeXfkHAdnvhEi?si=67468d27312447b4'
+            "https://open.spotify.com/artist/6cTAL3LcbKeXfkHAdnvhEi?si=67468d27312447b4"
           }
         >
           <CanvasRevealEffect
@@ -82,7 +82,7 @@ export function CanvasRevealEffectDemo() {
           title="Rush Besight"
           icon={<img src="/images/rush.jpg" />}
           link={
-            'https://open.spotify.com/artist/7mEd2TMAa8WfcxjfeFl6Dk?si=936a100e6a0d405e'
+            "https://open.spotify.com/artist/7mEd2TMAa8WfcxjfeFl6Dk?si=936a100e6a0d405e"
           }
         >
           <CanvasRevealEffect
@@ -99,7 +99,7 @@ export function CanvasRevealEffectDemo() {
           title="Bourbon"
           icon={<img src="/images/bourbon.jpg" />}
           link={
-            'https://open.spotify.com/artist/5QgLka5eZ8pChrTofSFkPh?si=x1NHNhm4T_qr_q8_6IGy_A'
+            "https://open.spotify.com/artist/5QgLka5eZ8pChrTofSFkPh?si=x1NHNhm4T_qr_q8_6IGy_A"
           }
         >
           <CanvasRevealEffect
@@ -126,8 +126,9 @@ const Card = ({ title, icon, children, link }) => {
       rel="noopener noreferrer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="p-4"
     >
-      <div className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] ">
+      <div className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto  relative h-[30rem] ">
         <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
         <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
         <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />

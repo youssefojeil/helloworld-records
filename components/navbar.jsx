@@ -12,7 +12,7 @@ const Navbar = () => {
     },
     {
       name: "About",
-      link: "#",
+      link: "/about",
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
@@ -29,7 +29,7 @@ const Navbar = () => {
     },
     {
       name: "Playlists",
-      link: "#",
+      link: "/playlists",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),

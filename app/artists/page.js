@@ -1,15 +1,16 @@
-import { CanvasRevealEffectDemo } from '@/components/canvas-reveal-effect-demo';
-import React from 'react';
+import { CanvasRevealEffectDemo } from "@/components/canvas-reveal-effect-demo";
+import React from "react";
 
 const ArtistsPage = () => {
   return (
-    <div className="mt-24 flex flex-col items-center justify-center">
-      <div>
-        <p className="mt-24 w-2xl mx-auto">
-          ALL ARTISTS ARE MANAGED BY HELLOWORLD CONTACT US:
-          hello@listentohelloworld.com
+    <div className="mt-48 flex flex-col items-center justify-center">
+      <div className="mb-12 text-center">
+        <h1 className="font-bold text-7xl">ARTISTS</h1>
+
+        <p className="mt-12 w-2xl mx-auto">
+          ALL ARTISTS ARE MANAGED BY HELLOWORLD
         </p>
-        <h1 className="mt-12 text-6xl">ARTISTS</h1>
+        <p> CONTACT US: hello@listentohelloworld.com</p>
       </div>
 
       <CanvasRevealEffectDemo />
