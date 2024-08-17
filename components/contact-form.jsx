@@ -1,25 +1,25 @@
-'use client';
-import React from 'react';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
-import { cn } from '@/lib/utils';
+"use client";
+import React from "react";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+import { cn } from "@/lib/utils";
 import {
   IconBrandGithub,
   IconBrandGoogle,
   IconBrandOnlyfans,
-} from '@tabler/icons-react';
+} from "@tabler/icons-react";
 
 export function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted');
+    console.log("Form submitted");
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black mt-20">
-      <div className="text-center">
-        <h2 className="font-bold text-3xl text-neutral-800 dark:text-neutral-200 mt-20">
+    <div className="max-w-lg w-full mx-auto rounded-none md:rounded-2xl px-4 md:px-8 shadow-input bg-white dark:bg-black mt-48">
+      <div className="text-center mb-24">
+        <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-center font-sans font-bold mb-6">
           CONTACT US
-        </h2>
+        </h1>
         <p>hello@listentohelloworld.com</p>
       </div>
 
@@ -36,7 +36,11 @@ export function ContactForm() {
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+          <Input
+            id="email"
+            placeholder="tyler_durden@fightclub.com"
+            type="email"
+          />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
@@ -44,6 +48,7 @@ export function ContactForm() {
             id="message"
             placeholder="Type your message here..."
             type="text"
+            className="h-32 align-text-top  "
           />
         </LabelInputContainer>
 
@@ -72,7 +77,7 @@ const BottomGradient = () => {
 
 const LabelInputContainer = ({ children, className }) => {
   return (
-    <div className={cn('flex flex-col space-y-2 w-full', className)}>
+    <div className={cn("flex flex-col space-y-2 w-full", className)}>
       {children}
     </div>
   );

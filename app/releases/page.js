@@ -1,5 +1,5 @@
-import { BackgroundBeams } from '@/components/ui/background-beams';
-import React from 'react';
+import { BackgroundBeams } from "@/components/ui/background-beams";
+import React from "react";
 
 const ReleasesPage = () => {
   return (
@@ -7,7 +7,7 @@ const ReleasesPage = () => {
       <div className="mb-24">
         {/* <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold"> */}
         <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-center font-sans font-bold">
-          Releases
+          RELEASES
         </h1>
       </div>
       <iframe
