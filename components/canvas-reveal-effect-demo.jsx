@@ -7,7 +7,7 @@ import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 export function CanvasRevealEffectDemo() {
   return (
     <>
-      <div className="mb-20 py-20 flex flex-col lg:flex-row flex-wrap items-center justify-center bg-white dark:bg-black w-3/4 gap-y-16 mx-auto px-12">
+      <div className="mb-20 py-20 flex flex-col lg:flex-row flex-wrap items-center justify-center bg-white dark:bg-black lg:w-3/4 gap-y-16 mx-auto px-12">
         <Card
           title="HYPER VISOR"
           icon={<img src="/images/hyper.jpg" />}

@@ -3,7 +3,7 @@ import React from "react";
 
 const ArtistsPage = () => {
   return (
-    <div className="mt-48 flex flex-col items-center justify-center">
+    <div className="mt-24 lg:mt-48 flex flex-col items-center justify-center">
       <div className="mb-12 text-center">
         <h1 className="font-bold text-7xl">ARTISTS</h1>
 

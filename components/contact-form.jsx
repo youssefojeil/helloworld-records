@@ -15,9 +15,9 @@ export function ContactForm() {
     console.log("Form submitted");
   };
   return (
-    <div className="max-w-lg w-full mx-auto rounded-none md:rounded-2xl px-4 md:px-8 shadow-input bg-white dark:bg-black mt-48">
+    <div className="max-w-lg w-full mx-auto rounded-none md:rounded-2xl px-4 md:px-8 shadow-input bg-white dark:bg-black mt-24 lg:mt-48">
       <div className="text-center mb-24">
-        <h1 className="relative z-10 text-lg md:text-7xl  bg-clip-text text-center font-sans font-bold mb-6">
+        <h1 className="relative z-10 text-7xl  bg-clip-text text-center font-sans font-bold mb-6">
           CONTACT US
         </h1>
         <p>hello@listentohelloworld.com</p>
