@@ -1,0 +1,48 @@
+steps:
+  # Step 1: Install dependencies
+  - name: "gcr.io/cloud-builders/npm"
+    entrypoint: "npm"
+    args: ["ci"]
+
+  # Step 2: Build the Next.js app
+  - name: "gcr.io/cloud-builders/npm"
+    entrypoint: "npm"
+    args: ["run", "build"]
+
+  # Step 3: Build the Docker image
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "us-central1-docker.pkg.dev/$PROJECT_ID/hello-world-website/nextjs-app",
+        ".",
+      ]
+
+  # Step 4: Push the Docker image to Artifact Registry
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "us-central1-docker.pkg.dev/$PROJECT_ID/hello-world-website/nextjs-app",
+      ]
+
+  # Step 5: Deploy the image to Cloud Run
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: "gcloud"
+    args:
+      [
+        "run",
+        "deploy",
+        "nextjs-app",
+        "--image",
+        "us-central1-docker.pkg.dev/$PROJECT_ID/hello-world-website/nextjs-app",
+        "--platform",
+        "managed",
+        "--region",
+        "us-central1",
+        "--allow-unauthenticated",
+      ]
+
+images:
+  - "us-central1-docker.pkg.dev/$PROJECT_ID/hello-world-website/nextjs-app"
